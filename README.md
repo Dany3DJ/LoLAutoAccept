@@ -5,12 +5,15 @@
   🌿 Step outside and touch some grass for a minute  
   ✅ No more stress over that annoying “Accept” prompt
 
-How to make it work? Its quite simple. <br/>
-  1- Download the .exe file. <br/>
-  2- Run it as an admin <br/>
-  3- It will accept your queue when the accept prompts. <br/>
+Here’s how to get things up and running — it’s super simple:<br/>
+1️⃣ Download the .exe file<br/>
+2️⃣ Right-click and run it as Administrator 🛡️<br/>
+3️⃣ When the prompt shows up, it’ll auto-accept your queue 🎮💨<br/>
 
-Sounds fishy? <br/>
-You are correct. <br/>
-But unfortunately the script did not work with the league client when not given admin privilege. <br/>
-So, I will be attaching the source code for the script here and you can run it yourself either through a python env or build it into an exe if you prefer.
+Sounds a bit sus? 🤔<br/>
+You're totally right to be cautious — and I appreciate that! 🙌<br/>
+Unfortunately, the script needs admin privileges to interact properly with the League client 😕<br/>
+But no worries — to keep everything transparent, I’m attaching the full source code right here 📂👨‍💻<br/>
+Feel free to run it directly in a Python environment 🐍 or build your own .exe if you'd rather go that route! 🚀<br/>
+
+Let me know if you run into any issues or have questions! 🛠️✨
