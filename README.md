@@ -1,9 +1,9 @@
 # LoLAutoAccept
-🎮 Automatically accepts your game queue for you so you can
-  🚽 Take a quick bathroom break without missing the match  
-  💧 Grab some water and stay refreshed  
-  🌿 Step outside and touch some grass for a minute  
-  ✅ No more stress over that annoying “Accept” prompt
+🎮 Automatically accepts your game queue for you so you can<br/>
+  🚽 Take a quick bathroom break without missing the match  <br/>
+  💧 Grab some water and stay refreshed  <br/>
+  🌿 Step outside and touch some grass for a minute  <br/>
+  ✅ No more stress over that annoying “Accept” prompt<br/>
 
 Here’s how to get things up and running — it’s super simple:<br/>
 1️⃣ Download the .exe file<br/>
