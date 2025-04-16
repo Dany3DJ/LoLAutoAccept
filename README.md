@@ -22,4 +22,6 @@ Let me know if you run into any issues or have questions! 🛠️✨
 Since I can't upload the exe file here due to the size limitations, I uploaded it to mediafire and the link is attached below.<br/>
 https://www.mediafire.com/file/xnvgftnd1dfqd1w/League_accept.exe/file <br/><br/>
 
-Currently, the script only supports the large client resolution only. But i'm working on a fix for it.
+Patch Notes:<br/>
+V0.2:<br/>
+Now it supports the different resolution scales of the client.
