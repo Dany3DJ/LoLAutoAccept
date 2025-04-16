@@ -36,24 +36,42 @@ def find_and_click_accept():
     screenshot_np = np.array(screenshot)
     gray_screenshot = cv2.cvtColor(screenshot_np, cv2.COLOR_BGR2GRAY)
 
-    res = cv2.matchTemplate(gray_screenshot, template, cv2.TM_CCOEFF_NORMED)
-    min_val, max_val, min_loc, max_loc = cv2.minMaxLoc(res)
+    scales = np.linspace(0.5, 1.2, 6)  # Try various scales
+    best_val = 0
+    best_loc = None
+    best_scale = 1
 
-    if max_val >= threshold:
-        top_left = max_loc
+    for scale in scales:
+        resized_template = cv2.resize(template, (0, 0), fx=scale, fy=scale)
+        if gray_screenshot.shape[0] < resized_template.shape[0] or gray_screenshot.shape[1] < resized_template.shape[1]:
+            continue  # Skip if template is bigger than screenshot
+
+        res = cv2.matchTemplate(gray_screenshot, resized_template, cv2.TM_CCOEFF_NORMED)
+        min_val, max_val, min_loc, max_loc = cv2.minMaxLoc(res)
+
+        if max_val > best_val:
+            best_val = max_val
+            best_loc = max_loc
+            best_scale = scale
+            best_size = resized_template.shape[::-1]  # (w, h)
+
+    if best_val >= threshold:
+        top_left = best_loc
+        w, h = best_size
         center_x = top_left[0] + w // 2
         center_y = top_left[1] + h // 2
 
-        print(f"🎯 Accept button found at ({center_x}, {center_y}), clicking...")
-        time.sleep(0.5)  # Delay to ensure the click is registered
+        #print(f"🎯 Accept button found at ({center_x}, {center_y}) with scale {best_scale:.2f}, clicking...")
+        print("🎯 Accept button found!")
+        time.sleep(0.2)
         click(center_x, center_y)
         quit()
         return True
     else:
-        print("🔍 Accept button not found.")
+        print("🔍 Accept button not found")
         return False
 
-print("🕹️ League Auto-Accept Bot Running... Press Ctrl+C to stop.")
+print("🕹️ League Auto-Accept Bot Running...")
 
 try:
     while True:
