@@ -20,7 +20,7 @@ Also, the big file size is due to integrating python, the required modules and s
 Let me know if you run into any issues or have questions! 🛠️✨
 
 Since I can't upload the exe file here due to the size limitations, I uploaded it to mediafire and the link is attached below.<br/>
-https://www.mediafire.com/file/xnvgftnd1dfqd1w/League_accept.exe/file <br/><br/>
+https://www.mediafire.com/file/yt8ri74qazhpfqm/League_accept_0.2.exe/file
 
 Patch Notes:<br/>
 V0.2:<br/>
